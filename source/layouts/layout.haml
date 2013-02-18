@@ -1,0 +1,134 @@
+!!!5
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+%html.no-js
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    
+    -# To set titles and descriptions globally and for each individual page, see /DOCS.md
+    %title= page_title
+    %meta{:content => page_description, :name => "description"}
+    
+    %meta{:content => "width=1080", :name => "viewport"}
+    
+    -#Favicon Options:
+    -#Update favicon_base.png in /source and middleman-favicon-maker will generate all the versions you need on 'middleman build'
+    -#OR, place favicon.ico and apple-touch-icon.png in /source and deactivate :favicon_maker in config.rb
+    
+    %link{href:'http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic',
+    rel:'stylesheet', type:'text/css'}
+    
+    = javascript_include_tag "vendor/modernizr-2.6.1.min"
+    = stylesheet_link_tag "site"
+  %body{class: page_classes}
+    /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    %header
+      .langswitch
+        If you prefer English 
+        %a{href:"#"} Click Here
+        %span> .
+
+      %nav
+        %ul.site-nav
+          %li
+            %a.index{href: "/"} HOME
+          %li
+            %a.about{href: "/about"} ABOUT
+          %li
+            %a.services{href: "/services"} SERVICES
+          %li
+            %a.projects{href: "/projects"} PROJECTS
+          %li
+            %a.news{href: "/news"} NEWS
+
+      %h1.site-logo Gedankenwerk. Agentur f&uuml;r neue Medien
+
+    = yield
+
+    %footer
+      .footer-wrapper.clearfix
+        %h1
+          KONTAKT
+          %span> .
+
+        .footer-address
+          %h2 
+            GEDANKENWERK –
+            %br 
+            AGENTUR FÜR NEUE MEDIEN
+          %p
+            Sascha Panter und Yvonne Schweiger GbR 
+            %br
+            Gentweg 10, 45356 Essen
+          %p
+            %a{href:"mailto:info@gedankenwerk.com"} info@gedankenwerk.com
+            %br
+            Tel. 0201 630 191 – 33
+            %br
+            Fax 0201 630 191 – 88
+
+          %h2 FOLGE UNS
+          %a.fb{href: "http://facebook.com/gedankenwerk"}
+            %img{src: "/images/Footer_Facebook.svg"}
+            %span >>
+
+        .footer-locations
+          %h2
+            %br
+            KURZFRISTIGER TERMIN VOR ORT?
+          %p
+            Das Gedankenwerk Team ist für ein schnelles 
+            Kennenlernen auch in anderen Städten präsent – 
+            eine kurze E-Mail genügt.
+
+          %dl
+            %dt 
+              BERLIN 
+              %span ......................
+            %dd 
+              %a{href: "be@gedankdnwerk.com"} be@gedankenwerk.com
+            %dt 
+              HAMBURG 
+              %span ......................
+            %dd 
+              %a{href: "hh@gedankenwerk.com"} hh@gedankenwerk.com
+            %dt 
+              NEW YORK 
+              %span ......................
+            %dd 
+              %a{href: "ny@gedankenwerk.com"} ny@gedankenwerk.com
+        
+        .footer-awards
+          %img{src: "/images/Footer_Designpreis_Deutschland.svg"}
+          %img{src: "/images/Footer_DMMA_Onlinestar.svg"}
+
+      .superfooter
+        %a{href: "/impressum"} Impressum
+        %span &copy; Gedankenwerk 2013
+
+        %ul.site-nav
+          %li
+            %a.home{href: "/"} Home
+          %li
+            %a.about{href: "/about"} About
+          %li
+            %a.services{href: "/services"} Services
+          %li
+            %a.projects{href: "/projects"} Projects
+          %li
+            %a.news{href: "/news"} News
+
+    
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"
+    :javascript
+      window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.8.0.min.js"><\/script>')
+    = javascript_include_tag "jquery.krautSlider.js"
+    = javascript_include_tag "site"
+    
+    :javascript
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));

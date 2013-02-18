@@ -1,0 +1,76 @@
+@import "susy";
+
+$total-columns: 12;
+$column-width: 60px;
+$gutter-width: 20px;
+$grid-padding: 10px;
+
+
+$break          : 12;
+
+header {
+  @include container($total-columns, $break);
+}
+.main, .footer-wrapper, .superfooter {
+  @include container($total-columns, $break);
+  //@include susy-grid-background;
+}
+.intro-bullets {
+  .bullet {
+    @include span-columns(3,12);
+    &:nth-child(4n) { @include omega; }
+  }
+}
+.home-news-item {
+  @include span-columns(4,12);
+  &:nth-child(3n) { @include omega; }
+}
+
+@include at-breakpoint($break) {
+  .main {
+    //@include susy-grid-background;
+  }
+}
+
+.span1to8 {
+  @include span-columns(8,12);
+}
+.span1to4 {
+  @include span-columns(4,12);
+}
+.span5to8 {
+  @include span-columns(4 ,12);
+}
+
+
+/* =========== ABOUT ============== */
+.about-pullquote {
+  @include span-columns(3 omega,12);
+}
+.ambition-bullets {
+  .ambitionbullet {
+    @include span-columns(4,12);
+    &:nth-child(3n) { @include omega; }
+  }
+}
+.howwework-bullets {
+  .howwework-bullet {
+    @include span-columns(3,12);
+    &:nth-child(4n) { @include omega; }
+  }
+}
+
+
+/* ========== FOOTER =========== */
+
+
+
+.footer-address {
+  @include span-columns(4,12);
+}
+.footer-locations {
+  @include span-columns(5,12);
+}
+.footer-awards {
+  @include span-columns(3 omega,12);
+}
