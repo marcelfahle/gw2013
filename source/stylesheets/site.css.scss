@@ -131,21 +131,44 @@ header {
 
     img {
       margin-bottom: 1.6em;
+      max-width: 100%;
     }
     h2 {
       margin-top: 0;
       color: $white;
-      font-size: 1.25em;
+      font-size: .8em;
       font-weight: normal;
       letter-spacing: .05em;
+      @media all and (max-width: 699px) and (min-width: 520px) {
+        font-size: 1em; 
+      }
+      @media all and (min-width: 700px) {
+        font-size: 1.25em;  
+      }
     }
     p {
-      font-size: 1.125em;
+      font-size: .7em;
       color: $gray;
       padding: 0;
       letter-spacing: .056em;
-      white-space: nowrap;
+      //white-space: nowrap;
+      @media all and (max-width: 699px) and (min-width: 520px) {
+        font-size: .9em; 
+      }
+      @media all and (min-width: 700px) {
+        font-size: 1.125em;  
+      }
     }
+  }
+  @media all and (max-width: 699px) and (min-width: 520px) {
+    h2 { font-size: 1em; }
+    p { font-size: .9em; }
+
+  }
+  @media all and (min-width: 700px) {
+    h2 { font-size: 1.25em; }
+    p { font-size: 1.125em; }
+
   }
 }
 

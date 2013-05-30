@@ -1,9 +1,10 @@
 @import "susy";
 
 $total-columns: 12;
-$column-width: 60px;
+$column-width: 78px;
 $gutter-width: 20px;
 $grid-padding: 10px;
+//12*78+(11*20)
 
 
 $break          : 12;
@@ -13,7 +14,7 @@ header {
 }
 .main, .footer-wrapper, .superfooter {
   @include container($total-columns, $break);
-  //@include susy-grid-background;
+  @include susy-grid-background;
 }
 .intro-bullets {
   .bullet {
