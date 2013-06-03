@@ -12,8 +12,18 @@
 $green: #5ceb00;
 $gray: #b4b4b4;
 $white: #fff;
+$maxw: 700px;
+$mediumw: 520px;
 @mixin shadowtext {
   text-shadow:2px 2px 1px rgba(0,0,0,0.9);
+}
+
+/* TPL */
+@media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+
+}
+@media all and (min-width: $maxw) {
+
 }
 
 
@@ -70,7 +80,7 @@ header {
   margin-bottom: 0;
   li {
     display: inline;
-    margin-left: 1.5625em;
+    margin-left: 1em;
     letter-spacing: .05em;
 
     a {
@@ -81,6 +91,14 @@ header {
     }
     a:hover, a:active {
       color: $green;
+    }
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      margin-left: .8em;
+
+    }
+    @media all and (min-width: $maxw) {
+      margin-left: 1.5625em;
+
     }
   }
 }
@@ -98,7 +116,7 @@ header {
 
 /* ================= CONTENT ============= */
 .tagline {
-  font-size: 4.375em;
+  font-size: 2.375em;
   font-weight: bold;
   text-align: center;
   color: $green;
@@ -108,15 +126,30 @@ header {
   span {
     color: $white;
   }
+  @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+    font-size: 3.5em;
+  }
+  @media all and (min-width: $maxw) {
+    font-size: 4.375em;
+
+  }
 }
 .subtagline {
-  font-size: 2.5em;
+  font-size: 1.2em;
   color: $white;
   text-align: center;
   margin-top: 0;
   margin-bottom: 1.7em;
   span {
     color: $green;
+  }
+  @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+    font-size: 1.5em;
+
+  }
+  @media all and (min-width: $maxw) {
+    font-size: 2.5em;
+
   }
 }
 
@@ -130,8 +163,21 @@ header {
     text-align: center;
 
     img {
+      margin-right: 1em;
       margin-bottom: 1.6em;
       max-width: 100%;
+      float: left;
+      width: 80px;
+      @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+        margin-right: 0;
+        width: 100%;
+        float: none;
+      }
+      @media all and (min-width: $maxw) {
+        margin-right: 0;
+        width: 200px;
+        float: none;
+      }
     }
     h2 {
       margin-top: 0;
@@ -139,11 +185,14 @@ header {
       font-size: .8em;
       font-weight: normal;
       letter-spacing: .05em;
-      @media all and (max-width: 699px) and (min-width: 520px) {
+      text-align: left;
+      @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
         font-size: 1em; 
+        text-align: center;
       }
-      @media all and (min-width: 700px) {
+      @media all and (min-width: $maxw) {
         font-size: 1.25em;  
+        text-align: center;
       }
     }
     p {
@@ -151,21 +200,24 @@ header {
       color: $gray;
       padding: 0;
       letter-spacing: .056em;
+      text-align: left;
       //white-space: nowrap;
-      @media all and (max-width: 699px) and (min-width: 520px) {
+      @media all and (max-width: $maxw - 1) and (min-width: $mediumw) {
         font-size: .9em; 
+        text-align: center;
       }
-      @media all and (min-width: 700px) {
+      @media all and (min-width: $maxw) {
         font-size: 1.125em;  
+        text-align: center;
       }
     }
   }
-  @media all and (max-width: 699px) and (min-width: 520px) {
+  @media all and (max-width: $maxw - 1) and (min-width: $mediumw) {
     h2 { font-size: 1em; }
     p { font-size: .9em; }
 
   }
-  @media all and (min-width: 700px) {
+  @media all and (min-width: $maxw) {
     h2 { font-size: 1.25em; }
     p { font-size: 1.125em; }
 
@@ -177,40 +229,88 @@ header {
 /* ============ HOME NEWS ================= */
 .home-news {
   margin-bottom: 2em;
-  h1 {
+  >h1 {
     display: inline-block;
-    font-size: 3.125em;
+    overflow: hidden;
+    font-size: 2em;
     font-weight: normal;
     border-bottom: 3px solid $green;
     margin-top: .55em;
     margin-bottom: 1.2em;
+    clear: both;
     span {
       color: $green;
+    }
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      font-size: 2.525em;
+    }
+    @media all and (min-width: $maxw) {
+      font-size: 3.125em;
+
     }
   }
 
 }
 .home-news-item {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   img {
-
+    width: 170px;
+    float: left;
+    max-width: 100%;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+    @media all and (min-width: $maxw) {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
   }
   h1 {
-    font-size: 1.375em;
-    border-bottom: 3px solid $green;
-    margin-top: 1.2em;
+    font-size: .8em;
+    margin-top: 0em;
     padding-bottom: .9em;
     margin-bottom: .5em;
+    border: none;
     span {
       color: $green;
+    }
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      font-size: .8em;
+      border-bottom: 2px solid $green;
+
+    }
+    @media all and (min-width: $maxw) {
+      font-size: 1.375em;
+      border-bottom: 3px solid $green;
+     
     }
   }
   p {
     color: $gray;
-    font-size: 1em;
+    font-size: .7em;
     letter-spacing: .0616em;
     line-height: 1.6em;
     padding-right: 15px;
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      font-size: .8em;
+    }
+    @media all and (min-width: $maxw) {
+      font-size: 1em;
+    }
+  }
+  @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+    margin-bottom: 2em;
+
+  }
+  @media all and (min-width: $maxw) {
+    margin-bottom: 3em;
   }
 }
 
@@ -637,7 +737,7 @@ footer {
   h1 {
 
     margin-top: .6em;
-    font-size: 3.125em;
+    font-size: 2em;
     font-weight: normal;
     margin-bottom: 0.54em;
     color: $white;
@@ -645,13 +745,25 @@ footer {
     span {
       color: $green;
     }
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      font-size: 2.525em;
+    }
+    @media all and (min-width: $maxw) {
+      font-size: 3.125em;
+    }
   }
   h2 {
     margin-top: 0;
     margin-bottom: 0.5em;
-    font-size: 1.25em;
+    font-size: .85em;
     line-height: 1em;
     color: $green;
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      font-size: 1em;
+    }
+    @media all and (min-width: $maxw) {
+      font-size: 1.25em;
+    }
   }
   p {
     margin-top: 0;
@@ -667,7 +779,7 @@ footer {
     clear: left;
     float: left;
     width: 5.8em;
-    font-size: 1.25em;
+    font-size: .85em;
     color: $green;
     overflow: hidden;
     white-space:nowrap;
@@ -677,6 +789,12 @@ footer {
     span {
       font-weight: normal;
       color: $gray;
+    }
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      font-size: 1em;
+    }
+    @media all and (min-width: $maxw) {
+      font-size: 1.25em;
     }
   }
   dd {
@@ -697,12 +815,20 @@ footer {
 
   }
   .footer-awards {
-    text-align: right;
-    position: absolute;
+    text-align: left;
+    position: relative;
     right: 0;
     bottom: 0;
     img {
       margin-bottom: 1.4em;
+    }
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      position: absolute;
+      text-align: right;
+    }
+    @media all and (min-width: $maxw) {
+      position: absolute;
+      text-align: right;
     }
   }
 }
@@ -732,4 +858,23 @@ footer {
       margin-left: 0;
     }
   }
+}
+.show-desktop {
+  display: none !important;
+  @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+    display: block !important;
+  }
+  @media all and (min-width: $maxw) {
+    display: block !important;
+  }
+}
+.show-mobile {
+  display: block !important;
+  @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+    display: none !important;
+  }
+  @media all and (min-width: $maxw) {
+    display: none !important;
+  }
+
 }

@@ -9,22 +9,30 @@ $grid-padding: 10px;
 
 $break          : 12;
 
-header {
+$maxw: 700px;
+$mediumw: 520px;
+
+header, .main, .footer-wrapper, .superfooter {
   @include container($total-columns, $break);
-}
-.main, .footer-wrapper, .superfooter {
-  @include container($total-columns, $break);
-  @include susy-grid-background;
+  //@include susy-grid-background;
 }
 .intro-bullets {
   .bullet {
-    @include span-columns(3,12);
-    &:nth-child(4n) { @include omega; }
+    @include span-columns(12 omega,12);
+    @media all and (min-width: $mediumw) {
+      @include span-columns(3,12);
+      &:nth-child(4n) { @include omega; }
+
+    }
   }
 }
 .home-news-item {
-  @include span-columns(4,12);
-  &:nth-child(3n) { @include omega; }
+  @include span-columns(12 omega,12);
+  @media all and (min-width: $mediumw) {
+    @include span-columns(4,12);
+    &:nth-child(3n) { @include omega; }
+
+  }
 }
 
 @include at-breakpoint($break) {
@@ -67,11 +75,20 @@ header {
 
 
 .footer-address {
-  @include span-columns(4,12);
+  @include span-columns(12 omega,12);
+  @media all and (min-width: $mediumw) {
+    @include span-columns(4,12);
+  }
 }
 .footer-locations {
-  @include span-columns(5,12);
+  @include span-columns(12 omega,12);
+  @media all and (min-width: $mediumw) {
+    @include span-columns(5,12);
+  }
 }
 .footer-awards {
-  @include span-columns(3 omega,12);
+  @include span-columns(12 omega,12);
+  @media all and (min-width: $mediumw) {
+    @include span-columns(3 omega,12);
+  }
 }
