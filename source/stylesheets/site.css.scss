@@ -325,10 +325,10 @@ header {
 }
 .slider-nav {
   position: absolute;
-  width: 960px;
+  width: 660px;
   left: 50%;
   top: 520px;
-  margin-left: -480px;
+  margin-left: -330px;
   z-index: 200;
 
   .slide-next, .slide-prev {
@@ -411,53 +411,78 @@ header {
     width: 440px;
     z-index: 220;
     color: #fff;
-    top: 180px;
-    left: 50%;
-    margin-left: -460px;
+    top: 110px;
+    margin-left: -575px;
+    font-family: 'Archivo Narrow', sans-serif;
 
     h1 {
       text-transform: uppercase;
-      font-size: 2.5em;
+      font-size: 48px;
       margin-bottom: .2em;
       margin-top: 0;
       overflow: auto;
+      text-shadow: none;
+      margin-bottom: 0;
     }
     p {
-      margin: 0;
-      font-size: 1.14em;
-    }
-  }
-  .nokia {
-
-  }
-  .smart {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    width: 520px;
-
-  }
-  .demail {
-    background: #fff;
-    padding: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px; /* future proofing */
-    -khtml-border-radius: 10px;
-
-
-    h1 {
-      color: #e20074;
       text-shadow: none;
-      text-transform: none;
-    }
-    p {
-      color: $gray;
-      text-shadow: none;
-    }
 
+    }
+    .client {
+      font-size: 16px;
+      margin-top: -10px;
+
+    }
+    .intro {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 1.2em; 
+
+    }
+    .copy {
+      font-weight: normal;
+      font-size: 14px;
+
+    }
+    .gotoproject {
+      display: inline-block;
+      width: 125px;
+      height: 44px;
+      text-indent: -9999em;
+      background: transparent url('../images/Home_Slider_Telekom_IMW_Button.png') no-repeat;
+    }
   }
 
 }
+.slide-tventure {
+  h1 { color: #fff;  }
+  h1 span { color: #e20074;  }
+  .client { color: #fff;  }
+  .intro { color: #4b4b4b;  }
+  .copy { color: #4b4b4b;  }
+} 
+.slide-imw {
+  h1 { color: #e20074;  }
+  h1 span { color: #e20074;  }
+  .client { color: #fff;  }
+  .intro { color: #fff;  }
+  .copy { color: #4b4b4b;  }
+} 
+.slide-tke {
+  top: 80px !important;
+  h1 { color: #004B79;  }
+  h1 span { color: #4b4b4b;  }
+  .client { color: #4b4b4b;  }
+  .intro { color: #4b4b4b;  }
+  .copy { color: #4b4b4b;  }
+} 
+.slide-produktshows {
+  h1 { color: #e20074;  }
+  h1 span { color: #e20074;  }
+  .client { color: #fff;  }
+  .intro { color: #fff;  }
+  .copy { color: #4b4b4b;  }
+} 
 
 .singletagline {
   margin-bottom: .85em;
@@ -723,6 +748,59 @@ header {
     }
   }
 }
+
+
+
+
+
+/* ================ PROJECTS ================== */
+.project {
+  width: 100%;
+  height: 614px;
+  margin-top:30px;
+  margin-bottom:-20px;
+  margin-left: -50%;
+  width: 2000px;
+}
+.project_arrow {
+  overflow: hidden;
+  position: relative;
+  margin: -4.9% auto;
+  padding: 4.42%; /* 25% of head's padding * sqrt(2) */
+  width: 0;
+  -webkit-transform: rotate(45deg);
+  //background: url(http://hubblesite.org/gallery/graphics/gallery_picture_album_background.jpg);
+  background-size: cover;
+}
+.project_arrow:after {
+  position: absolute;
+  bottom: 50%; left: 50%;
+  margin: -70.71%; /* half of the width or height */
+  width: 141.42%; height: 141.42%; /* sqrt(2)*141.42% */
+  -webkit-transform: rotate(-45deg);
+  background-size: 480% 250%; /* take into account ratio of the image */
+  content: '';
+}
+.project1 {
+  background: #5ceb3f;
+}
+.project1_arrow {
+  background: #5ceb3f;
+}
+.project1_arrow:after {
+  background: #5ceb3f;
+}
+.project2 {
+  background: #e20074;
+}
+.project2_arrow {
+  background: #e20074;
+}
+.project2_arrow:after {
+  background: #e20074;
+}
+
+
 
 
 
