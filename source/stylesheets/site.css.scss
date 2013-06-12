@@ -784,7 +784,11 @@ header {
       font-size: 48px;
       color: #fff;
       margin-top: 0;
+      margin-bottom: 0;
       line-height: 50px;
+    }
+    .client {
+      margin-top: 0;
     }
 
   }
@@ -816,12 +820,14 @@ header {
   z-index: 980;
   .content {
     h1 { color: #004c76; }
+    .client { color: #4b4b4b; }
   }
 }
 
 .project-icss {
   .content {
     h1 { color: #e20074; }
+    .client { color: #4b4b4b; }
   }
 }
 
@@ -837,6 +843,7 @@ header {
     margin-top: 60px;
     width: 680px;
     h1 { font-size: 46px; }
+    .client { color: #FFA500 } 
   }
 }
 
@@ -851,12 +858,14 @@ header {
   .content {
     margin-top: 80px; 
     h1 { font-size: 45px; }
+    .client { color: #4b4b4b; margin-top: 26px; }
   }
 }
 
 .project-fanmeile {
   .content {
     h1 { margin-left: 40px; margin-top: 10px;line-height: 42px; color: #002869 ;font-size: 45px; }
+    .client { margin-top: 46px; }
   }
 }
 
@@ -865,6 +874,7 @@ header {
   .content {
     margin-top: 80px; 
     h1 { font-size: 45px; }
+    .client { color: #FFA500 } 
   }
 }
 
@@ -873,6 +883,7 @@ header {
   .content {
     margin-top: 70px; 
     h1 { font-size: 45px; color: #e20074; }
+    .client { color: #4b4b4b; }
   }
 }
 
@@ -880,6 +891,7 @@ header {
   .content {
     margin-top: 50px; 
     h1 { font-size: 45px; line-height: 42px;  color: #00a2dd; }
+    .client { color: #4b4b4b; }
   }
 }
 
