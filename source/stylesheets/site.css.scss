@@ -892,47 +892,93 @@ header {
   .content {
     
     h1 {}
+    .intro { color: #00CCFF;  } 
+    .intro, .copy { width: 520px; }
+  }
+  .gotoproject { 
+    background: transparent url('/images/Project_Nokia_X6_Produktshow_Button.png') no-repeat;  
+    cursor: default;
+    width: 123px;
+    height: 40px;
   }
 }
 
 .project-infoservice {
   .content {
-    margin-top: 80px; 
+    margin-top: 102px; 
     h1 { font-size: 45px; }
     .client { color: #4b4b4b; margin-top: 26px; }
+    .intro, .copy { color: #4b4b4b; width: 465px;  }
+  }
+  .gotoproject { 
+    background: transparent url('/images/Project_Telekom_Infoservice_Button.png') no-repeat;  
+    cursor: default;
+    width: 134px;
+    height: 44px;
   }
 }
 
 .project-fanmeile {
   .content {
+    margin-top: 130px;
     h1 { margin-left: 40px; margin-top: 10px;line-height: 42px; color: #002869 ;font-size: 45px; }
     .client { margin-top: 46px; }
+    .intro, .copy { width: 450px; }
+  }
+  .gotoproject { 
+    background: transparent url('/images/Project_Fanmeile_Berlin_Button.png') no-repeat;  
+    cursor: default;
+    width: 185px;
+    height: 35px;
   }
 }
 
 
 .project-smart2009 {
   .content {
-    margin-top: 80px; 
     h1 { font-size: 45px; }
     .client { color: #FFA500 } 
+    .intro, .copy { width: 450px; }
+    .intro { color: #a4a4a4; }
+    .copy { color: #fff; }
+  }
+  .gotoproject { 
+    background: transparent url('/images/Project_Smart_Kampagne_2010-2011_Button.png') no-repeat;  
+    cursor: default;
+    width: 124px;
+    height: 40px;
   }
 }
 
 
 .project-demail {
   .content {
-    margin-top: 70px; 
+    margin-top: 90px; 
     h1 { font-size: 45px; color: #e20074; }
-    .client { color: #4b4b4b; }
+    .client, .intro, .copy { width: 450px; color: #4b4b4b; }
+  }
+  .gotoproject { 
+    margin-top: 50px;
+    background: transparent url('/images/Project_DE-Mail_Filialfinder_Button.png') no-repeat;  
+    cursor: default;
+    width: 122px;
+    height: 40px;
   }
 }
 
 .project-foursquare{
   .content {
-    margin-top: 50px; 
+    margin-top: 60px; 
     h1 { font-size: 45px; line-height: 42px;  color: #00a2dd; }
-    .client { color: #4b4b4b; }
+    .client, .intro, .copy { width: 510px; color: #4b4b4b; }
+    .copy { margin-bottom: 20px; }
+  }
+  .gotoproject { 
+    margin-top: 0px ;
+    background: transparent url('/images/Project_Foursquare_NEXT11_Button.png') no-repeat;  
+    cursor: default;
+    width: 124px;
+    height: 41px;
   }
 }
 
