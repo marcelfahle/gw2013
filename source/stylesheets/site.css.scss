@@ -764,6 +764,7 @@ header {
 /* ================ PROJECTS ================== */
 .projects-section {
   margin-bottom: 100px;
+  margin-top: 100px;
   position: relative;
 }
 .project-wrapper {
@@ -772,7 +773,7 @@ header {
 .project {
   position: relative;
   height: 644px;
-  margin-bottom:-10px;
+  margin-bottom:0px;
   .content {
     position: absolute;
     z-index: 10;
@@ -789,6 +790,19 @@ header {
     }
     .client {
       margin-top: 0;
+      margin-bottom: 21px;
+    }
+    .intro {
+      font-size: 18px;
+      margin-bottom: 21px;
+    }
+    .copy {
+      font-size: 14px;
+      margin-bottom: 31px;
+    }
+    .gotoproject {
+      display: inline-block;
+      text-indent: -9999em;
     }
 
   }
@@ -800,12 +814,20 @@ header {
     top: 0;
   }
 }
+.gototelekom { 
+  background: transparent url('/images/Home_Slider_T-Venture_Button.png') no-repeat;  
+  width: 125px;
+  height: 44px;
+}
 .project-tventure {
   z-index: 1000;
-  h1 {
-    span {
-      color: #e20074;
+  .content {
+    h1 {
+      span {
+        color: #e20074;
+      }
     }
+    .intro, .copy { width: 420px; color: #4b4b4b; }
   }
 
 }
@@ -814,36 +836,55 @@ header {
   .content {
     h1 { color: #e20074; }
   }
+  .intro, .copy { width: 420px;  }
+  .copy { color: #4b4b4b; }
 }
 
 .project-tke {
   z-index: 980;
   .content {
     h1 { color: #004c76; }
-    .client { color: #4b4b4b; }
+    p { width: 490px; color: #4b4b4b; }
+  }
+  .gotoproject { 
+    background: transparent url('/images/Home_Slider_TKE_eInfo_Button.png') no-repeat;  
+    cursor: default;
+    width: 140px;
+    height: 39px;
   }
 }
 
 .project-icss {
   .content {
     h1 { color: #e20074; }
-    .client { color: #4b4b4b; }
+    p { width: 490px;  color: #4b4b4b; }
   }
 }
 
 .project-produktshows {
   .content {
-    width: 680px;
-    h1 { color: #e20074; }
+    margin-top: 80px;
+    h1 { width: 680px; font-size: 46px; color: #e20074; }
+    .client, .intro { width: 420px; color: #fff; }
+    .copy { width: 420px; color: #4b4b4b; }
   }
 }
 
 .project-smart2010{
   .content {
-    margin-top: 60px;
+    margin-top: 84px;
     width: 680px;
     h1 { font-size: 46px; }
     .client { color: #FFA500 } 
+    .intro { color: #a4a4a4; }
+    .copy { color: #fff; }
+    .intro, .copy { width: 560px; }
+  }
+  .gotoproject { 
+    background: transparent url('/images/Project_Smart_Kampagne_2010-2011_Button.png') no-repeat;  
+    cursor: default;
+    width: 124px;
+    height: 40px;
   }
 }
 
