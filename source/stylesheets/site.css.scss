@@ -762,6 +762,42 @@ header {
 
 
 /* ================ PROJECTS ================== */
+.pagination {
+  margin-top: 80px;
+  padding: 0;
+  text-align: center;
+
+  .page {
+    color: #fff;
+    padding: 12px 17px 12px 17px;
+    font-size: 20px;
+    border: 3px solid #4fec00;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0px;
+    margin: 0 10px 0 10px;
+  }
+  .page.active { 
+    border: none; 
+    padding: 12px 17px 12px 17px;
+    cursor: default; 
+  }
+  .btnnext, .btnprev {
+    width: 49px;
+    height: 57px;
+    text-indent: -9999em;
+    display: inline-block;
+    padding-top: 18px;
+  }
+  .btnnext {
+    background: transparent url('/images/btn-next.png') no-repeat;
+    margin-left: 60px;
+  }
+  .btnprev {
+    background: transparent url('/images/btn-prev.png') no-repeat;
+    margin-right: 60px;
+  }
+}
 .projects-section {
   margin-bottom: 100px;
   margin-top: 100px;
