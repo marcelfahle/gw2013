@@ -771,14 +771,14 @@ header {
     color: #fff;
     padding: 12px 17px 12px 17px;
     font-size: 20px;
-    border: 3px solid #4fec00;
+    border: none; 
     text-decoration: none;
     display: inline-block;
     margin-top: 0px;
     margin: 0 10px 0 10px;
   }
   .page.active { 
-    border: none; 
+    border: 3px solid #4fec00;
     padding: 12px 17px 12px 17px;
     cursor: default; 
   }
@@ -800,7 +800,7 @@ header {
 }
 .projects-section {
   margin-bottom: 100px;
-  margin-top: 100px;
+  margin-top: 60px;
   position: relative;
 }
 .project-wrapper {
@@ -808,7 +808,7 @@ header {
 }
 .project {
   position: relative;
-  height: 644px;
+  height: 634px;
   margin-bottom:0px;
   .content {
     position: absolute;
@@ -831,6 +831,7 @@ header {
     .intro {
       font-size: 18px;
       margin-bottom: 21px;
+      font-weight: bold;
     }
     .copy {
       font-size: 14px;
@@ -842,12 +843,32 @@ header {
     }
 
   }
-  img {
+  .obj {
+    position: absolute;
+    z-index: 20;
+    height: auto;
+    max-width: 100%;
+  }
+  .bgtop {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    margin-left: -1280px;
+    top: 0px;
+  }
+  .bg {
     position: absolute;
     z-index: 5;
     left: 50%;
     margin-left: -1280px;
-    top: 0;
+    top: 37px;
+  }
+  .bgbottom {
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    margin-left: -1280px;
+    top: 614px;
   }
 }
 .gototelekom { 
@@ -865,6 +886,10 @@ header {
     }
     .intro, .copy { width: 420px; color: #4b4b4b; }
   }
+  .obj {
+    bottom: 80px;
+    left: 438px;
+  }
 
 }
 .project-imw {
@@ -874,6 +899,10 @@ header {
   }
   .intro, .copy { width: 420px;  }
   .copy { color: #4b4b4b; }
+  .obj {
+    bottom: 80px;
+    left: 438px;
+  }
 }
 
 .project-tke {
@@ -881,6 +910,10 @@ header {
   .content {
     h1 { color: #004c76; }
     p { width: 490px; color: #4b4b4b; }
+  }
+  .obj {
+    bottom: 20px;
+    left: 540px;
   }
   .gotoproject { 
     background: transparent url('/images/Home_Slider_TKE_eInfo_Button.png') no-repeat;  
@@ -895,6 +928,10 @@ header {
     h1 { color: #e20074; }
     p { width: 490px;  color: #4b4b4b; }
   }
+  .obj {
+    bottom: 20px;
+    left: 0px;
+  }
 }
 
 .project-produktshows {
@@ -903,6 +940,10 @@ header {
     h1 { width: 680px; font-size: 46px; color: #e20074; }
     .client, .intro { width: 420px; color: #fff; }
     .copy { width: 420px; color: #4b4b4b; }
+  }
+  .obj {
+    bottom: 80px;
+    left: 540px;
   }
 }
 
@@ -915,6 +956,10 @@ header {
     .intro { color: #a4a4a4; }
     .copy { color: #fff; }
     .intro, .copy { width: 560px; }
+  }
+  .obj {
+    bottom: 80px;
+    left: 600px;
   }
   .gotoproject { 
     background: transparent url('/images/Project_Smart_Kampagne_2010-2011_Button.png') no-repeat;  
@@ -931,6 +976,10 @@ header {
     .intro { color: #00CCFF;  } 
     .intro, .copy { width: 520px; }
   }
+  .obj {
+    bottom: 20px;
+    left: 560px;
+  }
   .gotoproject { 
     background: transparent url('/images/Project_Nokia_X6_Produktshow_Button.png') no-repeat;  
     cursor: default;
@@ -941,10 +990,14 @@ header {
 
 .project-infoservice {
   .content {
-    margin-top: 102px; 
+    margin-top: 80px; 
     h1 { font-size: 45px; }
     .client { color: #4b4b4b; margin-top: 26px; }
     .intro, .copy { color: #4b4b4b; width: 465px;  }
+  }
+  .obj {
+    bottom: 40px;
+    left: 560px;
   }
   .gotoproject { 
     background: transparent url('/images/Project_Telekom_Infoservice_Button.png') no-repeat;  
@@ -956,10 +1009,14 @@ header {
 
 .project-fanmeile {
   .content {
-    margin-top: 130px;
+    margin-top: 105px;
     h1 { margin-left: 40px; margin-top: 10px;line-height: 42px; color: #002869 ;font-size: 45px; }
     .client { margin-top: 46px; }
     .intro, .copy { width: 450px; }
+  }
+  .obj {
+    bottom: 30px;
+    left: 580px;
   }
   .gotoproject { 
     background: transparent url('/images/Project_Fanmeile_Berlin_Button.png') no-repeat;  
@@ -972,11 +1029,16 @@ header {
 
 .project-smart2009 {
   .content {
+    margin-top: 80px;
     h1 { font-size: 45px; }
     .client { color: #FFA500 } 
     .intro, .copy { width: 450px; }
     .intro { color: #a4a4a4; }
     .copy { color: #fff; }
+  }
+  .obj {
+    bottom: 20px;
+    left: 600px;
   }
   .gotoproject { 
     background: transparent url('/images/Project_Smart_Kampagne_2010-2011_Button.png') no-repeat;  
@@ -989,9 +1051,13 @@ header {
 
 .project-demail {
   .content {
-    margin-top: 90px; 
+    margin-top: 70px; 
     h1 { font-size: 45px; color: #e20074; }
     .client, .intro, .copy { width: 450px; color: #4b4b4b; }
+  }
+  .obj {
+    bottom: 120px;
+    left: 680px;
   }
   .gotoproject { 
     margin-top: 50px;
@@ -1004,10 +1070,14 @@ header {
 
 .project-foursquare{
   .content {
-    margin-top: 60px; 
+    margin-top: 40px; 
     h1 { font-size: 45px; line-height: 42px;  color: #00a2dd; }
     .client, .intro, .copy { width: 510px; color: #4b4b4b; }
-    .copy { margin-bottom: 20px; }
+    .copy { margin-bottom: 10px; }
+  }
+  .obj {
+    bottom: 20px;
+    left: 650px;
   }
   .gotoproject { 
     margin-top: 0px ;

@@ -1,4 +1,8 @@
 jQuery ->
+  $('.fancybox-media').fancybox(
+    helpers:
+      media: {}
+  )
 
   sliders = []
   $('.feature-slider').krautSlider
