@@ -12,7 +12,16 @@
     %meta{:content => page_description, :name => "description"}
     
     -#%meta{:content => "width=1080", :name => "viewport"}
-    %meta{:content => "width=device-width", :name => "viewport"}
+    %meta#viewport{:content => "width=500", :name => "viewport"}
+    :javascript
+      (function(doc) {
+        var viewport = document.getElementById('viewport');
+        if ( navigator.userAgent.match(/iPad/i)) {
+          document.getElementById("viewport").setAttribute("content", "width=1280, maximum-scale=1.0");
+        }
+      }(document));
+
+    -#%meta{:content => "width=device-width", :name => "viewport"}
     
     -#Favicon Options:
     -#Update favicon_base.png in /source and middleman-favicon-maker will generate all the versions you need on 'middleman build'
@@ -24,7 +33,7 @@
     = stylesheet_link_tag "site"
     = stylesheet_link_tag "jquery.fancybox"
   %body{class: page_classes}
-    /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    /[if lte IE 8] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
     %header
       -#.langswitch.show-desktop
       -#  If you prefer English 
@@ -48,9 +57,18 @@
           -#%li
           -#  %a.news{href: "/news"} NEWS
       %nav.show-mobile
-        %ul.site-nav
+        %ul.mobile-nav-trigger
           %li
-            %a.index{href: "/"} MENU
+            %a.index{href: "#"} MENU
+        %ul.mobile-nav
+          %li
+            %a.index{href: "/"} HOME
+          %li
+            %a.about{href: "/about"} ABOUT
+          %li
+            %a.services{href: "/services"} SERVICES
+          %li
+            %a.projects{href: "/projects"} PROJECTS
 
       %h1.site-logo Gedankenwerk. Agentur f&uuml;r neue Medien
 

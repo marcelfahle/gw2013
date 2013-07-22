@@ -10,5 +10,8 @@ jQuery ->
     prevBtn: $('.slider-nav .slide-prev')
     navIndex: $('.slider-nav .slide-indexes')
 
+  $('.mobile-nav-trigger').on 'click', (e) ->
+    e.preventDefault()
+    $('.mobile-nav').slideToggle 'slow'
 
   

@@ -58,14 +58,34 @@ header, .main, .footer-wrapper, .superfooter {
 }
 .ambition-bullets {
   .ambitionbullet {
-    @include span-columns(4,12);
-    &:nth-child(3n) { @include omega; }
+    @include span-columns(12,12);
+    //&:nth-child(3n) { @include omega; }
+    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
+      @include span-columns(12,12 );
+      //&:nth-child(3n) { @include omega; }
+    }
+    @media all and (min-width: $maxw) {
+      @include span-columns(4,12 );
+      &:nth-child(3n) { @include omega; }
+    }
   }
 }
 .howwework-bullets {
   .howwework-bullet {
-    @include span-columns(3,12);
-    &:nth-child(4n) { @include omega; }
+    @include span-columns(6,12);
+    &:nth-child(4n) { @include remove-omega;  }
+    &:nth-child(2n) { @include omega;  }
+    @include at-breakpoint(700px, 12) {
+      @include span-columns(3,12);
+      &:nth-child(2n) { @include remove-omega;  }
+      &:nth-child(4n) { @include omega; }
+      margin-bottom: 30px;
+
+    }
+    //@include at-breakpoint(700px, 12) {
+    //  @include span-columns(3,12);
+    //  &:nth-child(4n) { @include omega; border: 1px solid green; }
+    //}
   }
 }
 

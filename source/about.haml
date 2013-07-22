@@ -14,16 +14,13 @@ description:
   %section.clearfix.contentsection
 
     %aside.about-pullquote
-      "Wir lieben 
-      %br/
-      Herausforderungen. 
-      %br/
-      Und wir brauchen sie. 
-      %br/
-      Nur so entsteht etwas 
-      %br/
-      wirklich Neues."
-      %span 
+      %p.quote
+        "Wir lieben 
+        Herausforderungen. 
+        Und wir brauchen sie. 
+        Nur so entsteht etwas 
+        wirklich Neues."
+      %span.author
         %strong Sascha Panter
         %br
         Managing Director
@@ -33,13 +30,22 @@ description:
       Für Ergebnisse, die neue Maßstäbe setzen statt bestehende zu imitieren
       %span> .
 
-    %p.span1to4.copy
+    %p.span1to4.copy.show-desktop
       Seit über einem Jahrzehnt steht Gedankenwerk für einen klaren Anspruch: 
       Wir entwickeln Lösungen, deren Qualität die Erwartungen unserer Kunden 
       übertrifft. Denn wir denken, dass etwas Erwartetes nicht wirklich 
       innovativ sein kann. Wir sind Macher, die für eine gute Idee
 
-    %p.span5to8.copy
+    %p.span5to8.copy.show-desktop
+      kämpfen, bevor sie zum Kompromiss wird. 
+      Solange wir keine überzeugende Lösung für Sie gefunden haben, bleiben wir 
+      chronisch unzufrieden. Denn wir wollen auf jede unserer Arbeiten stolz sein.
+
+    %p.span1to8.copy.show-mobile
+      Seit über einem Jahrzehnt steht Gedankenwerk für einen klaren Anspruch: 
+      Wir entwickeln Lösungen, deren Qualität die Erwartungen unserer Kunden 
+      übertrifft. Denn wir denken, dass etwas Erwartetes nicht wirklich 
+      innovativ sein kann. Wir sind Macher, die für eine gute Idee
       kämpfen, bevor sie zum Kompromiss wird. 
       Solange wir keine überzeugende Lösung für Sie gefunden haben, bleiben wir 
       chronisch unzufrieden. Denn wir wollen auf jede unserer Arbeiten stolz sein.
@@ -54,8 +60,9 @@ description:
 
     .ambition-bullets.clearfix
       .ambitionbullet
-        %h2
-          %span 
+        .testwrap
+          %img{src: "/images/bulletcircle.svg"}
+          %h2.threelines
             Exzellente 
             %br/
             Kreativarbeit und 
@@ -68,8 +75,9 @@ description:
 
 
       .ambitionbullet
-        %h2
-          %span 
+        .testwrap
+          %img{src: "/images/bulletcircle.svg"}
+          %h2.twolines
             Spezialisten aus 
             %br/ 
             allen Bereichen
@@ -79,8 +87,9 @@ description:
           nur im Zusammenspiel von Köpfen, die unterschiedlich denken.
 
       .ambitionbullet
-        %h2 
-          %span 
+        .testwrap
+          %img{src: "/images/bulletcircle.svg"}
+          %h2.twolines
             Innovative 
             %br/
             Technologien
