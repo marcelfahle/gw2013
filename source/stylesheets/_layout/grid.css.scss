@@ -14,7 +14,7 @@ $mediumw: 520px;
 
 header, .main, .footer-wrapper, .superfooter {
   @include container($total-columns, $break);
-  //@include susy-grid-background;
+  @include susy-grid-background;
 }
 .intro-bullets {
   .bullet {
@@ -71,13 +71,14 @@ header, .main, .footer-wrapper, .superfooter {
   }
 }
 .howwework-bullets {
+  @include reset-columns;
   .howwework-bullet {
     @include span-columns(6,12);
-    &:nth-child(4n) { @include remove-omega;  }
-    &:nth-child(2n) { @include omega;  }
+    &:nth-child(2n) { @include omega; }
+    &:nth-child(4n) { @include remove-omega; margin-right: 0; }
     @include at-breakpoint(700px, 12) {
       @include span-columns(3,12);
-      &:nth-child(2n) { @include remove-omega;  }
+      &:nth-child(2n) { @include remove-omega; margin-right: 1.73%; }
       &:nth-child(4n) { @include omega; }
       margin-bottom: 30px;
 
