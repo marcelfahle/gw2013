@@ -14,7 +14,7 @@ $mediumw: 520px;
 
 header, .main, .footer-wrapper, .superfooter {
   @include container($total-columns, $break);
-  @include susy-grid-background;
+  //@include susy-grid-background;
 }
 .intro-bullets {
   .bullet {
