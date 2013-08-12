@@ -5,7 +5,7 @@
 *= require "_vendor/html5bp.css"
 
 //Grid
-*= require "_layout/grid"
+*= require "_layout/gridie8"
 
 */
 
@@ -41,6 +41,9 @@ body {
   overflow-x: hidden;
 
 }
+.lt-ie9 body {
+  background: #000;
+}
 
 a:link, a:visited {
   color: $green;
@@ -50,6 +53,9 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
+.browserwarning {
+  margin-bottom: 200px;
+}
 .browserwarning, .ie8 {
   display: none;
 }
@@ -1139,8 +1145,6 @@ header {
       display: block;
       text-indent: -9999em;
       cursor: pointer;
-      float: left;
-      margin-right: 20px;
     }
 
     @media all and (max-width: 969px )  {
@@ -1175,14 +1179,14 @@ header {
     }
     @media all and (max-width: 1679px ) and (min-width: 1440px) {
       h1 { font-size: 40px !important; line-height: 38px; }
-      .intro { font-size: 18px; line-height: 22px; }
-      .copy { font-size: 16px; }
+      .intro { font-size: 16px; line-height: 20px; }
+      .copy { font-size: 14px; }
       .intro, .copy { width: 430px; }
     }
     @media all and (min-width: 1680px) {
       h1 { font-size: 44px !important; line-height: 42px; }
-      .intro { font-size: 20px; line-height: 24px; }
-      .copy { font-size: 16px; }
+      .intro { font-size: 18px; line-height: 22px; }
+      .copy { font-size: 14px; }
       .intro, .copy { width: 450px; }
     }
 
@@ -1398,7 +1402,7 @@ header {
     p {  color: #4b4b4b; }
   }
   .obj {
-    left: 53.6%;
+    left: 50%;
   }
   @media all and (max-width: 969px )   {
     height: 791px;
@@ -1412,7 +1416,7 @@ header {
   @media all and (max-width: 1439px ) and (min-width: 1280px) {
     .content { margin-top: 70px;  }
     //.obj { width: 440px; left: 570px; bottom: 18px; }
-    .obj { width: 460px;  bottom: 18px; }
+    .obj { width: 440px;  bottom: 18px; }
   }
   @media all and (max-width: 1679px ) and (min-width: 1440px) {
     .content { margin-top: 100px;  }
@@ -1483,12 +1487,6 @@ header {
     width: 124px;
     height: 40px;
   }
-  .gotosmart2010video { 
-    background: transparent url('/images/Project_Smart_Kampagne_2010-2011_VideoButton.png') no-repeat;  
-    cursor: default;
-    width: 185px;
-    height: 40px;
-  }
   @media all and (max-width: 969px )   {
     height: 791px;
     .objmobile { bottom: -472px; }
@@ -1501,7 +1499,7 @@ header {
   @media all and (max-width: 1439px ) and (min-width: 1280px) {
     .content { margin-top: 60px;  }
     //.obj { width: 520px; left: 570px; bottom: 20px; }
-    .obj { width: 515px; left: 54%; bottom: 20px; }
+    .obj { width: 520px;  bottom: 20px; }
   }
   @media all and (max-width: 1679px ) and (min-width: 1440px) {
     .content { margin-top: 50px;  }
@@ -1511,7 +1509,7 @@ header {
   @media all and (min-width: 1680px) {
     .content { margin-top: 80px;  }
     //.obj { width: 584px; left: 592px; bottom: 20px; }
-    .obj { width: 600px; left: 52%;  bottom: 20px; }
+    .obj { width: 584px;  bottom: 20px; }
   }
 }
 
@@ -1640,17 +1638,17 @@ header {
   @media all and (max-width: 1439px ) and (min-width: 1280px) {
     .content { margin-top: 60px;  }
     //.obj { width: 520px; left: 570px; bottom: 17px; }
-    .obj { width: 560px; left: 56.2%;  bottom: 17px; }
+    .obj { width: 520px;  bottom: 17px; }
   }
   @media all and (max-width: 1679px ) and (min-width: 1440px) {
     .content { margin-top: 50px;  }
     //.obj { width: 550px; left: 560px; bottom: 18px; }
-    .obj { width: 600px; left: 53%; bottom: 18px; }
+    .obj { width: 550px;  bottom: 18px; }
   }
   @media all and (min-width: 1680px) {
     .content { margin-top: 80px;  }
     //.obj { width: 584px; left: 592px; bottom: 18px; }
-    .obj { width: 639px;  bottom: 18px; }
+    .obj { width: 584px;  bottom: 18px; }
   }
 }
 
@@ -1692,7 +1690,7 @@ header {
   @media all and (max-width: 1439px ) and (min-width: 1280px) {
     .content { margin-top: 60px;  }
     //.obj { width: 520px; left: 570px; bottom: 17px; }
-    .obj { width: 520px;  left: 53%; bottom: 17px; }
+    .obj { width: 520px;  bottom: 17px; }
   }
   @media all and (max-width: 1679px ) and (min-width: 1440px) {
     .content { margin-top: 50px;  }
@@ -1755,7 +1753,7 @@ header {
   @media all and (max-width: 1439px ) and (min-width: 1280px) {
     .content { margin-top: 50px; width: 408px; height: 340px;  }
     //.obj { width: 600px; left: 570px; bottom: 100px; }
-    .obj { width: 550px; left: 56%;  bottom: 100px; }
+    .obj { width: 600px;  bottom: 100px; }
   }
   @media all and (max-width: 1679px ) and (min-width: 1440px) {
     .content { margin-top: 70px; width: 480px; background-size: 500px auto; }
@@ -1846,12 +1844,7 @@ footer {
     span {
       color: $green;
     }
-    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
-      font-size: 2.525em;
-    }
-    @media all and (min-width: $maxw) {
-      font-size: 3.125em;
-    }
+    font-size: 3.125em;
   }
   h2 {
     max-height: 999999px;
@@ -1860,12 +1853,7 @@ footer {
     font-size: .85em;
     line-height: 1em;
     color: $green;
-    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
-      font-size: 1em;
-    }
-    @media all and (min-width: $maxw) {
-      font-size: 1.25em;
-    }
+    font-size: 1.25em;
   }
   p {
     max-height: 999999px;
@@ -1894,12 +1882,7 @@ footer {
       font-weight: normal;
       color: $gray;
     }
-    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
-      font-size: 1em;
-    }
-    @media all and (min-width: $maxw) {
-      font-size: 1.25em;
-    }
+    font-size: 1.25em;
   }
   dd {
     max-height: 999999px;
@@ -1931,14 +1914,8 @@ footer {
     img {
       margin-bottom: 1.4em;
     }
-    @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
-      position: absolute;
-      text-align: right;
-    }
-    @media all and (min-width: $maxw) {
-      position: absolute;
-      text-align: right;
-    }
+    position: absolute;
+    text-align: right;
   }
 }
 .superfooter {
@@ -1967,28 +1944,4 @@ footer {
       margin-left: 0;
     }
   }
-}
-@media all and (max-width: 969px )   {
-  .superfooter > ul {
-    top: -70px;
-  }
-}
-.show-desktop {
-  display: none !important;
-  @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
-    display: block !important;
-  }
-  @media all and (min-width: $maxw) {
-    display: block !important;
-  }
-}
-.show-mobile {
-  display: block !important;
-  @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
-    display: none !important;
-  }
-  @media all and (min-width: $maxw) {
-    display: none !important;
-  }
-
 }

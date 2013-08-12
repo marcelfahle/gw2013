@@ -153,26 +153,11 @@ header, .main, .footer-wrapper, .superfooter {
 
 
 .footer-address {
-  @include span-columns(12 omega,12);
-  @media all and (min-width: $mediumw) {
-    @include span-columns(4,12);
-  }
+  @include span-columns(4,12);
 }
 .footer-locations {
-  @include span-columns(12 omega,12);
-  margin-top: 40px;
-  @media all and (min-width: $mediumw) {
-    margin-top: 0;
-    @include span-columns(5,12);
-  }
+  @include span-columns(5,12);
 }
 .footer-awards {
-  @include span-columns(12 omega,12);
-  img {
-    float: right;
-    margin: 10px;
-  }
-  @media all and (min-width: $mediumw) {
-    @include span-columns(3 omega,12);
-  }
+  @include span-columns(3 omega,12);
 }

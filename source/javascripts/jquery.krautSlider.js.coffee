@@ -57,7 +57,7 @@ $.extend $.fn.krautSlider,
         percentage = 2560 / $('body').width() * 100
         @ul.css 'left', "#{-(percentage * @currentIndex)+50}%"
         delete @balancer
-      ), 100
+      ), 0
     
 
   goTo: (index) ->

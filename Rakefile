@@ -3,11 +3,14 @@ require "bundler/setup"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "root@gedankenwerk.com"
-ssh_port       = "22"
-document_root  = "/var/www/vhosts/gedankenwerk.com/site2013"
-rsync_delete   = true
-deploy_default = "rsync"
+ssh_user            = "root@gedankenwerk.com"
+ssh_port            = "22"
+document_root       = "/var/www/vhosts/gedankenwerk.com/site2013"
+document_root_live  = "/var/www/vhosts/gedankenwerk.com/httpdocs"
+rsync_delete        = true
+deploy_default      = "rsync"
+deploy_live = "rsync_live"
+
 
 
 public_dir      = "./build"    # compiled site directory
@@ -15,10 +18,15 @@ public_dir      = "./build"    # compiled site directory
 # Deploying  #
 ##############
 
-desc "Default deploy task"
-task :deploy do
-
-  Rake::Task["#{deploy_default}"].execute
+namespace :deploy do
+  desc "Default deploy task"
+  task :dev do
+    Rake::Task["#{deploy_default}"].execute
+  end
+  desc "Default deploy task"
+  task :live do
+    Rake::Task["#{deploy_live}"].execute
+  end
 end
 
 desc "Generate website and deploy"
@@ -36,6 +44,15 @@ task :rsync do
   ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
 end
 
+desc "Deploy website via rsync to live"
+task :rsync_live do
+  exclude = ""
+  if File.exists?('./rsync-exclude')
+    exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
+  end
+  puts "## Deploying website via Rsync"
+  ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root_live}")
+end
 
 desc "Update configurations to support publishing to root or sub directory"
 task :set_root_dir, :dir do |t, args|

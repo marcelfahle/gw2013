@@ -31,9 +31,13 @@
     
     = javascript_include_tag "vendor/modernizr-2.6.1.min"
     = stylesheet_link_tag "site"
+    /[if lte IE 8] 
+      = stylesheet_link_tag "siteie8"
     = stylesheet_link_tag "jquery.fancybox"
   %body{class: page_classes}
-    /[if lte IE 8] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+
+
+
     %header
       -#.langswitch.show-desktop
       -#  If you prefer English 
@@ -70,7 +74,24 @@
           %li
             %a.projects{href: "/projects"} PROJECTS
 
-      %h1.site-logo Gedankenwerk. Agentur f&uuml;r neue Medien
+      %h1.site-logo.modernbrowser Gedankenwerk. Agentur f&uuml;r neue Medien
+      %h1.site-logo.ie8 Gedankenwerk. Agentur f&uuml;r neue Medien
+
+    /[if lte IE 8] 
+      %div{:role => "main", :class => "main browserwarning"}
+
+        %section
+          %p.tagline
+            IHR BROWSER WIRD LEIDER 
+            %br 
+            NICHT UNTERST&Uuml;tzt
+            %span> .
+
+          %p.subtagline
+            Bitte verwenden Sie eine aktuelle Version von Internet Explorer,
+            %br/
+            Firefox, Chrome oder Safari
+            %span> .
 
     = yield
 
@@ -98,7 +119,8 @@
 
           %h2 FOLGE UNS
           %a.fb{href: "http://facebook.com/gedankenwerk"}
-            %img{src: "/images/Footer_Facebook.svg"}
+            %img.modernbrowser{src: "/images/Footer_Facebook.svg"}
+            %img.ie8{src: "/images/Footer_Facebook.png", width: 107}
             %span >>
 
         .footer-locations
@@ -128,8 +150,11 @@
               %a{href: "ny@gedankenwerk.com"} ny@gedankenwerk.com
         
         .footer-awards
-          %img{src: "/images/Footer_Designpreis_Deutschland.svg"}
-          %img{src: "/images/Footer_DMMA_Onlinestar.svg"}
+          %img.modernbrowser{src: "/images/Footer_Designpreis_Deutschland.svg"}
+          %img.modernbrowser{src: "/images/Footer_DMMA_Onlinestar.svg"}
+          %img.ie8{src: "/images/Footer_Designpreis_Deutschland.png", width: 80, height: 128}
+          %img.ie8{src: "/images/Footer_DMMA_Onlinestar.png", width: 200, height: 51}
+
 
       .superfooter
         %a{href: "/impressum"} Impressum
@@ -157,7 +182,7 @@
     = javascript_include_tag "site"
     
     :javascript
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      var _gaq=[['_setAccount','UA-21442306-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
