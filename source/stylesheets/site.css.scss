@@ -530,7 +530,7 @@ header {
       right: 720px;
     }
     @media all and (min-width: 1230px) {
-      width: 624px;
+      //width: 624px;
       right: 640px;
     }
   }
@@ -645,6 +645,21 @@ header {
   }
 
 }
+.slide-dialog{
+  h1 { color: #e20074;  }
+  h1 span { color: #676767;  }
+  .client { color: #676767;  }
+  .intro { color: #4b4b4b;  }
+  .copy { color: #4b4b4b;  }
+  .object.show-desktop { top: 10px; right: 500px; }
+  .object.show-mobile { margin-left: -293px;  }
+  @media all and (min-width: 970px) and (max-width: 1229px )  {
+    .object.show-desktop { top: 40px; right: 700px; width: 600px; }
+  }
+  @media all and (min-width: 1230px) {
+    .object.show-desktop { top: 10px; right: 500px; }
+  }
+} 
 .slide-tventure {
   h1 { color: #fff;  }
   h1 span { color: #e20074;  }
@@ -1262,10 +1277,61 @@ header {
   height: 44px;
   cursor: pointer;
 }
+.project-dialog{
+  z-index: 1000;
+  .content {
+    h1 {
+      color: #e20074;
+      span {
+        color: #e20074;
+      }
+    }
+    .client { color: #676767; }
+    .intro, .copy { color: #4b4b4b; }
+    @media all and (max-width: 969px )  {
+      // only for first
+      margin-top: 10px;
+    }
+  }
+  .obj {
+    height: auto;
+    bottom: 22px;
+    width: 867px;
+    max-width: 100%;
+    left: 50%;
+  }
+  @media all and (max-width: 969px )   {
+    height: 715px;
+    //.objmobile { margin-left: -300px; bottom: -320px; }
+    .objmobile { bottom: -358px; margin-left: -357px; }
+  }
+  @media all and (min-width: 970px) and (max-width: 1279px )  {
+    .content { margin-top: 60px;  }
+    //.obj { width: 500px; left: 460px; }
+    .obj { width: 600px; bottom: 17px;  }
+  }
+  @media all and (max-width: 1439px ) and (min-width: 1280px) {
+    .content { margin-top: 70px;  }
+    //.obj { width: 560px; left: 570px; }
+    .obj { width: 760px; bottom: 19px;  }
+  }
+  @media all and (max-width: 1679px ) and (min-width: 1440px) {
+    .content { margin-top: 90px;  }
+    //.obj { width: 600px; left: 560px; }
+    .obj { width: 800px; bottom: 20px;  }
+  }
+  @media all and (min-width: 1680px) {
+    .content { margin-top: 90px;  }
+    //.obj { width: 623px; left: 592px; }
+    .obj { width: 867px;  }
+  }
+
+}
 .project-tventure {
   z-index: 1000;
   .content {
     h1 {
+      margin-top: 20px;
       span {
         color: #e20074;
       }

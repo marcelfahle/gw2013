@@ -3,6 +3,8 @@ set :markdown_engine, :redcarpet
 
 #Livereload
 activate :livereload
+
+activate :i18n, :langs => [:de, :en], :mount_at_root => :de
 activate :directory_indexes
 
 ### 
@@ -73,8 +75,8 @@ configure :build do
   
   # Enable cache buster
   # activate :cache_buster
-  activate :directory_indexes
   activate :asset_hash
+  activate :directory_indexes
   
   # Use relative URLs
   # activate :relative_assets
