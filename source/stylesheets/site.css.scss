@@ -1322,6 +1322,176 @@ header {
   height: 44px;
   cursor: pointer;
 }
+
+
+.project-anstoss {
+  z-index: 1000;
+  .content {
+    h1 {
+      color: #e20074;
+      span {
+        color: #e20074;
+      }
+    }
+    .client { color: #4b4b4b; }
+    .intro, .copy { color: #000; }
+    @media all and (max-width: 969px )  {
+      // only for first
+      margin-top: 10px;
+    }
+  }
+  .obj {
+    height: auto;
+    bottom: 22px;
+    width: 623px;
+    max-width: 100%;
+    left: 50%;
+  }
+  @media all and (max-width: 969px )   {
+    height: 715px;
+    //.objmobile { margin-left: -300px; bottom: -320px; }
+    .objmobile { bottom: -400px; margin-left: -262px; }
+  }
+  @media all and (min-width: 970px) and (max-width: 1279px )  {
+    .content { margin-top: 60px;  }
+    //.obj { width: 500px; left: 460px; }
+    .obj { width: 540px; bottom: -38px;  }
+  }
+  @media all and (max-width: 1439px ) and (min-width: 1280px) {
+    .content { margin-top: 70px;  }
+    //.obj { width: 560px; left: 570px; }
+    .obj { width: 604px; bottom: -50px;  }
+  }
+  @media all and (max-width: 1679px ) and (min-width: 1440px) {
+    .content { margin-top: 90px;  }
+    //.obj { width: 600px; left: 560px; }
+    .obj { width: 623px; bottom: -51px;  }
+  }
+  @media all and (min-width: 1680px) {
+    .content { margin-top: 90px;  }
+    //.obj { width: 623px; left: 592px; }
+    .obj { width: 623px;  }
+  }
+
+}
+
+
+
+
+.project-workplace {
+  z-index: 1000;
+  .content {
+    h1 {
+      color: #fff;
+      span {
+        color: #fff;
+      }
+    }
+    .client { color: #fff; }
+    .intro, .copy { color: #000; }
+    @media all and (max-width: 969px )  {
+      // only for first
+      margin-top: 10px;
+    }
+  }
+  .obj {
+    height: auto;
+    bottom: 22px;
+    width: 623px;
+    max-width: 100%;
+    left: 50%;
+  }
+  @media all and (max-width: 969px )   {
+    height: 715px;
+    .content { margin-top: 40px;  }
+    //.objmobile { margin-left: -300px; bottom: -320px; }
+    .objmobile { bottom: -400px; margin-left: -262px; }
+  }
+  @media all and (min-width: 970px) and (max-width: 1279px )  {
+    .content { margin-top: 60px;  }
+    //.obj { width: 500px; left: 460px; }
+    .obj { width: 540px; bottom: 35px;  }
+  }
+  @media all and (max-width: 1439px ) and (min-width: 1280px) {
+    .content { margin-top: 70px;  }
+    //.obj { width: 560px; left: 570px; }
+    .obj { width: 604px; bottom: 32px;  }
+  }
+  @media all and (max-width: 1679px ) and (min-width: 1440px) {
+    .content { margin-top: 90px;  }
+    //.obj { width: 600px; left: 560px; }
+    .obj { width: 643px; bottom: 19px;  }
+  }
+  @media all and (min-width: 1680px) {
+    .content { margin-top: 90px;  }
+    //.obj { width: 623px; left: 592px; }
+    .obj { width: 643px;  }
+  }
+
+}
+
+
+
+
+
+.project-techday{
+  z-index: 1000;
+  .content {
+    h1 {
+      color: #e20074;
+      span {
+        color: #e20074;
+      }
+    }
+    .client { color: #030303; }
+    .intro, .copy { color: #030303; }
+    @media all and (max-width: 969px )  {
+      // only for first
+      margin-top: 10px;
+    }
+  }
+  .obj {
+    height: auto;
+    bottom: 22px;
+    width: 623px;
+    max-width: 100%;
+    left: 50%;
+  }
+  @media all and (max-width: 969px )   {
+    height: 715px;
+    .content { margin-top: 40px;  }
+    //.objmobile { margin-left: -300px; bottom: -320px; }
+    .objmobile { width: 370px; bottom: -460px; margin-left: -206px; }
+  }
+  @media all and (min-width: 970px) and (max-width: 1279px )  {
+    .content { margin-top: 40px;  }
+    //.obj { width: 500px; left: 460px; }
+    .obj { width: 540px; bottom: 35px;  }
+  }
+  @media all and (max-width: 1439px ) and (min-width: 1280px) {
+    .content { margin-top: 40px;  }
+    //.obj { width: 560px; left: 570px; }
+    .obj { width: 604px; bottom: 32px;  }
+  }
+  @media all and (max-width: 1679px ) and (min-width: 1440px) {
+    .content { margin-top: 60px;  }
+    //.obj { width: 600px; left: 560px; }
+    .obj { width: 643px; bottom: 19px;  }
+  }
+  @media all and (min-width: 1680px) {
+    .content { margin-top: 60px;  }
+    //.obj { width: 623px; left: 592px; }
+    .obj { width: 643px;  }
+  }
+
+}
+
+
+
+
+
+
+
 .project-dialog{
   z-index: 1000;
   .content {
@@ -1347,8 +1517,9 @@ header {
   }
   @media all and (max-width: 969px )   {
     height: 715px;
+    .content { margin-top: 40px;  }
     //.objmobile { margin-left: -300px; bottom: -320px; }
-    .objmobile { bottom: -358px; margin-left: -357px; }
+    .objmobile { bottom: -388px; margin-left: -357px; }
   }
   @media all and (min-width: 970px) and (max-width: 1279px )  {
     .content { margin-top: 60px;  }
