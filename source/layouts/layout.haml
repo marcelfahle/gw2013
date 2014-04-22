@@ -30,11 +30,12 @@
     %link{href:'http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic', rel:'stylesheet', type:'text/css'}
     
     = javascript_include_tag "vendor/modernizr-2.6.1.min"
+    = stylesheet_link_tag "components"
     = stylesheet_link_tag "site"
     /[if lte IE 8] 
       = stylesheet_link_tag "siteie8"
     = stylesheet_link_tag "jquery.fancybox"
-  %body{class: page_classes}
+  %body.dtx{class: page_classes}
 
 
 
