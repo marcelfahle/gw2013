@@ -212,29 +212,14 @@ input::-moz-focus-inner {
   color: white;
   border-color: #cc0069;
   background-color: #e20074;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff339c), color-stop(50%, #e20074), color-stop(100%, #cc0069));
-  background: -webkit-linear-gradient(#ff339c, #e20074 50%, #cc0069);
-  background: -moz-linear-gradient(#ff339c, #e20074 50%, #cc0069);
-  background: -o-linear-gradient(#ff339c, #e20074 50%, #cc0069);
-  background: linear-gradient(#ff339c, #e20074 50%, #cc0069);
 }
 .dtx .button.magenta:hover, .dtx .button.magenta:focus {
   border-color: #ba0060;
   background-color: #d1006c;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ed2f91), color-stop(50%, #d1006c), color-stop(100%, #ba0060));
-  background: -webkit-linear-gradient(#ed2f91, #d1006c 50%, #ba0060);
-  background: -moz-linear-gradient(#ed2f91, #d1006c 50%, #ba0060);
-  background: -o-linear-gradient(#ed2f91, #d1006c 50%, #ba0060);
-  background: linear-gradient(#ed2f91, #d1006c 50%, #ba0060);
 }
 .dtx .button.magenta:active, .dtx .button.magenta.active {
   border-color: #a60056;
   background-color: #bd0061;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d92b85), color-stop(50%, #bd0061), color-stop(100%, #a60056));
-  background: -webkit-linear-gradient(#d92b85, #bd0061 50%, #a60056);
-  background: -moz-linear-gradient(#d92b85, #bd0061 50%, #a60056);
-  background: -o-linear-gradient(#d92b85, #bd0061 50%, #a60056);
-  background: linear-gradient(#d92b85, #bd0061 50%, #a60056);
 }
 /* TKE Button */
 
@@ -253,6 +238,96 @@ input::-moz-focus-inner {
 .dtx .button.tke:active, .dtx .button.tke.active {
   border: none;
   background-color: #004b90;
+}
+
+
+/* SMART BUTTON */
+.dtx .button.smart {
+}
+.dtx .button.smart, .dtx .button.smart.unavailable, .dtx .button.smart.unavailable:hover, .dtx .button.smart.unavailable:focus, .dtx .button.smart.unavailable.hover, .dtx .button.smart.unavailable:active, .dtx .button.smart.unavailable.active {
+  color: white;
+  border: none;
+  background-color: #000;
+  text-shadow: none;
+}
+.dtx .button.smart:hover, .dtx .button.smart:focus {
+  border: none;
+  background-color: #000;
+  color: orange;
+}
+.dtx .button.smart:active, .dtx .button.smart.active {
+  border: none;
+  background-color: #000;
+  color: orange;
+}
+
+
+/* NOKIA BUTTON */
+.dtx .button.nokia{
+}
+.dtx .button.nokia, .dtx .button.nokia.unavailable, .dtx .button.nokia.unavailable:hover, .dtx .button.nokia.unavailable:focus, .dtx .button.nokia.unavailable.hover, .dtx .button.nokia.unavailable:active, .dtx .button.nokia.unavailable.active {
+  color: white;
+  border: none;
+  background-color: #000b19;
+  text-shadow: none;
+}
+.dtx .button.nokia:hover, .dtx .button.nokia:focus {
+  border: none;
+  background-color: #000b19;
+  color: #00CCFF;
+}
+.dtx .button.nokia:active, .dtx .button.nokia.active {
+  border: none;
+  background-color: #000b19;
+  color: #00CCFF;
+}
+
+
+/* FANMEILE BUTTON */
+.dtx .button.fanmeile{
+}
+.dtx .button.fanmeile, .dtx .button.fanmeile.unavailable, .dtx .button.fanmeile.unavailable:hover, .dtx .button.fanmeile.unavailable:focus, .dtx .button.fanmeile.unavailable.hover, .dtx .button.fanmeile.unavailable:active, .dtx .button.fanmeile.unavailable.active {
+  color: white;
+  border: none;
+  background-color: #9ac100;
+  text-shadow: none;
+}
+.dtx .button.fanmeile:hover, .dtx .button.fanmeile:focus {
+  border: none;
+  background-color: #fff;
+  color: #9ac100;
+}
+.dtx .button.fanmeile:active, .dtx .button.fanmeile.active {
+  border: none;
+  background-color: #fff;
+  color: #9ac100;
+}
+
+
+
+/* FOURSQUARE BUTTON */
+.dtx .button.foursquare{
+}
+.dtx .button.foursquare, .dtx .button.foursquare.unavailable, .dtx .button.foursquare.unavailable:hover, .dtx .button.foursquare.unavailable:focus, .dtx .button.foursquare.unavailable.hover, .dtx .button.foursquare.unavailable:active, .dtx .button.foursquare.unavailable.active {
+  color: white;
+  border: none;
+  background-color: #00a1e2;
+  text-shadow: none;
+}
+.dtx .button.foursquare:hover, .dtx .button.foursquare:focus {
+  border: none;
+  background-color: #00a1e2;
+  color: #ffb000;
+}
+.dtx .button.foursquare:active, .dtx .button.foursquare.active {
+  border: none;
+  background-color: #00a1e2;
+  color: #ffb000;
+}
+
+
+.button.unavailable {
+  cursor: default;
 }
 
 
