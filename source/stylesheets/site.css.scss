@@ -418,6 +418,7 @@ header {
   }
 }
 .slider-nav {
+  pointer-events: none;
   position: absolute;
   width: 480px;
   left: 50%;
@@ -434,6 +435,7 @@ header {
   }
 
   .slide-next, .slide-prev {
+    pointer-events: auto;
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -449,6 +451,7 @@ header {
     background-position: -70px 0;
   }
   .slide-indexes {
+    pointer-events: auto;
     position: absolute; 
     width: 200px;
     text-align: center;
@@ -546,15 +549,18 @@ header {
     width: 460px;
     left: 50%;
     margin-left: -230px;
+    text-align: center;
     @media all and (min-width: 970px) and (max-width: 1229px )  {
       top: 60px;
       width: 400px;
       margin-left: -480px !important;
+      text-align: left;
     }
     @media all and (min-width: 1230px) {
       top: 80px;
       width: 440px;
       margin-left: -575px !important;
+      text-align: left;
     }
 
     h1 {
@@ -566,6 +572,7 @@ header {
       text-shadow: none;
       margin-bottom: 0;
       margin-bottom: .2em;
+      text-align: left;
       @media all and (min-width: 970px) and (max-width: 1229px )  {
         font-size: 40px;
         line-height: 38px;
@@ -577,7 +584,7 @@ header {
     }
     p {
       text-shadow: none;
-
+      text-align: left;
     }
     .client {
       font-size: 16px;
@@ -608,15 +615,11 @@ header {
 
     }
     .gotoproject {
-      display: inline-block;
-      width: 125px;
-      height: 44px;
-      text-indent: -9999em;
-      background: transparent url('../images/Home_Slider_Telekom_IMW_Button.png') no-repeat;
-      display: block;
-      margin: 0 auto;
-      margin-top: 330px;
+      position: relative;
+      z-index: 2000;
+      margin-top: 320px;
       cursor: pointer;
+      
       @media all and (min-width: 970px) and (max-width: 1229px )  {
         display: inline-block;
         margin-left: 0px;
@@ -643,7 +646,6 @@ header {
 
     }
   }
-
 }
 .slide-anstoss{
   h1 { color: #e20074;  }
@@ -711,6 +713,7 @@ header {
   .client { color: #fff;  }
   .intro { color: #4b4b4b;  }
   .copy { color: #4b4b4b;  }
+  .object.show-desktop { top: 10px; }
 } 
 .slide-imw {
   h1 { color: #e20074;  }
@@ -726,6 +729,7 @@ header {
   .client { color: #4b4b4b;  }
   .intro { color: #4b4b4b;  }
   .copy { color: #4b4b4b;  }
+  .object.show-desktop { top: 10px; }
 } 
 .slide-produktshows {
   h1 { color: #e20074;  }
@@ -733,6 +737,7 @@ header {
   .client { color: #fff;  }
   .intro { color: #fff;  }
   .copy { color: #4b4b4b;  }
+  .object.show-desktop { top: 10px; }
 } 
 
 .singletagline {
