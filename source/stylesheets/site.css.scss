@@ -105,7 +105,7 @@ header {
   margin-bottom: 0;
   li {
     display: inline;
-    margin-left: 1em;
+    margin-left: 0.9em;
     letter-spacing: .05em;
 
     a {
@@ -118,11 +118,14 @@ header {
       color: $green;
     }
     @media all and (max-width: $maxw - 1 ) and (min-width: $mediumw) {
-      margin-left: .8em;
+      margin-left: .60em;
+      font-size: 0.83em;
 
     }
     @media all and (min-width: $maxw) {
       margin-left: 1.5625em;
+      margin-left: 0.9em;
+      font-size: 1.125em;
 
     }
   }
@@ -1358,17 +1361,17 @@ header {
     .objmobile { bottom: -400px; margin-left: -262px; }
   }
   @media all and (min-width: 970px) and (max-width: 1279px )  {
-    .content { margin-top: 60px;  }
+    .content { margin-top: 50px;  }
     //.obj { width: 500px; left: 460px; }
     .obj { width: 540px; bottom: -38px;  }
   }
   @media all and (max-width: 1439px ) and (min-width: 1280px) {
-    .content { margin-top: 70px;  }
+    .content { margin-top: 50px;  }
     //.obj { width: 560px; left: 570px; }
     .obj { width: 604px; bottom: -50px;  }
   }
   @media all and (max-width: 1679px ) and (min-width: 1440px) {
-    .content { margin-top: 90px;  }
+    .content { margin-top: 70px;  }
     //.obj { width: 600px; left: 560px; }
     .obj { width: 623px; bottom: -51px;  }
   }
