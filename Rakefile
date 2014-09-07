@@ -3,13 +3,21 @@ require "bundler/setup"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user            = "root@gedankenwerk.com"
-ssh_port            = "22"
+ssh_user            = "deployer@gedankenwerk2.de"
+ssh_port            = "25001"
 document_root       = "/var/www/vhosts/gedankenwerk.com/site2013"
 document_root_live  = "/var/www/vhosts/gedankenwerk.com/httpdocs"
 rsync_delete        = true
 deploy_default      = "rsync"
 deploy_live = "rsync_live"
+
+#ssh_user            = "root@gedankenwerk.com"
+#ssh_port            = "22"
+#document_root       = "/var/www/vhosts/gedankenwerk.com/site2013"
+#document_root_live  = "/var/www/vhosts/gedankenwerk.com/httpdocs"
+#rsync_delete        = true
+#deploy_default      = "rsync"
+#deploy_live = "rsync_live"
 
 
 

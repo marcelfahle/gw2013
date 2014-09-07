@@ -1,0 +1,30 @@
+---
+title: Serices - Gedankenwerk. Agentur f&uuml;r neue Medien
+description:
+---
+%div{:role => "main", :class => "main"}
+
+
+
+  %section
+    .projects-section
+      .project-wrapper
+
+
+
+        = partial 'prj_infoservice'
+        = partial 'prj_fanmeile'
+        = partial 'prj_smart2009'
+        = partial 'prj_demail'
+        = partial 'prj_foursquare'
+
+
+
+
+      .pagination
+        %a.btnprev{href: "/projects2"} <
+        %a.page{href: "/projects"} 1
+        %a.page{href: "/projects2"} 2
+        %a.page.active{href: "/projects3"} 3
+        %a.btnnext.hidden{href: "/projects2"} >
+
