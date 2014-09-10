@@ -1498,7 +1498,7 @@ header {
   @media all and (min-width: 1680px) {
     .content { margin-top: 60px;  }
     //.obj { width: 623px; left: 592px; }
-    .obj { width: 707px; top: 5px;  }
+    .obj { width: 707px; top: -26px;  }
   }
 
 }
@@ -1554,7 +1554,7 @@ header {
   @media all and (min-width: 1680px) {
     .content { margin-top: 60px;  }
     //.obj { width: 623px; left: 592px; }
-    .obj { width: 707px;  }
+    .obj { width: 707px; top: -25px;  }
   }
 
 }
@@ -1610,9 +1610,9 @@ header {
     .obj { width: 800px; bottom: 20px;  }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 90px;  }
+    .content { margin-top: 60px;  }
     //.obj { width: 623px; left: 592px; }
-    .obj { width: 867px;  }
+    .obj { width: 876px;  }
   }
 
 }
@@ -1659,9 +1659,9 @@ header {
     .obj { width: 600px;  }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 90px;  }
+    .content { margin-top: 40px;  }
     //.obj { width: 623px; left: 592px; }
-    .obj { width: 623px;  }
+    .obj { width: 623px; top: -5px;  }
   }
 
 }
@@ -1699,7 +1699,7 @@ header {
     .obj { width: 600px;  }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 100px;  }
+    .content { margin-top: 60px;  }
     //.obj { width: 623px; left: 570px; bottom: 154px; }
     .obj { width: 623px;  }
   }
@@ -1741,9 +1741,9 @@ header {
     .obj { width: 600px;  }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 80px;  }
+    .content { margin-top: 60px;  }
     //.obj { width: 623px; left: 570px; bottom: 18px; }
-    .obj { width: 623px;  }
+    .obj { width: 623px; top: -15px;  }
   }
 }
 
@@ -1753,7 +1753,7 @@ header {
     p {  color: #4b4b4b; }
   }
   .obj {
-    left: 53.6%;
+    left: 53.2%;
   }
   @media all and (max-width: 969px )   {
     height: 791px;
@@ -1775,7 +1775,7 @@ header {
     .obj { width: 500px;  bottom: 19px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 100px;  }
+    .content { margin-top: 60px;  }
     //.obj { width: 522px; left: 592px; bottom: 20px; }
     .obj { width: 522px;  bottom: 20px; }
   }
@@ -1810,7 +1810,7 @@ header {
     .obj { width: 600px;  bottom: 19px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 80px;  }
+    .content { margin-top: 60px;  }
     //.obj { width: 623px; left: 592px; bottom: 20px; }
     .obj { width: 623px;  bottom: 20px; }
   }
@@ -1864,7 +1864,7 @@ header {
     .obj { width: 550px;  bottom: 20px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 80px;  }
+    .content { margin-top: 63px;  }
     //.obj { width: 584px; left: 592px; bottom: 20px; }
     .obj { width: 600px; left: 52%;  bottom: 20px; }
   }
@@ -1907,9 +1907,9 @@ header {
     .obj { width: 710px;  bottom: 19px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 100px;  }
+    .content { margin-top: 60px;  }
     //.obj { width: 755px; left: 592px; bottom: 20px; }
-    .obj { width: 755px;  bottom: 20px; }
+    .obj { width: 755px;  top: -36px; }
   }
 }
 
@@ -1951,9 +1951,9 @@ header {
     .obj { width: 640px;  bottom: 19px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 100px;  }
+    .content { margin-top: 58px;  }
     //.obj { width: 671px; left: 592px; bottom: 40px; }
-    .obj { width: 671px;  bottom: 40px; }
+    .obj { width: 671px;  top: -47px; left: 53%; }
   }
 }
 
@@ -2003,9 +2003,9 @@ header {
     .obj { width: 600px; left: 53%; bottom: 18px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 80px;  }
+    .content { margin-top: 65px;  }
     //.obj { width: 584px; left: 592px; bottom: 18px; }
-    .obj { width: 639px;  bottom: 18px; }
+    .obj { width: 642px;  bottom: 18px; left: 53%; }
   }
 }
 
@@ -2055,7 +2055,7 @@ header {
     .obj { width: 550px;  bottom: 18px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 80px;  }
+    .content { margin-top: 65px;  }
     //.obj { width: 584px; left: 592px; bottom: 18px; }
     .obj { width: 584px;  bottom: 18px; }
   }
@@ -2118,9 +2118,9 @@ header {
     .obj { width: 630px;  bottom: 110px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 70px; width: 470px;  }
+    .content { margin-top: 62px; width: 470px;  }
     //.obj { width: 658px; left: 592px; bottom: 110px; }
-    .obj { width: 658px;  bottom: 110px; }
+    .obj { width: 622px;  bottom: 110px; left: 56%; }
   }
 }
 
@@ -2176,9 +2176,9 @@ header {
     .obj { width: 420px; bottom: 19px; }
   }
   @media all and (min-width: 1680px) {
-    .content { margin-top: 60px; width: 440px;  }
+    .content { margin-top: 67px; width: 440px;  }
     //.obj { width: 464px; left: 592px; bottom: 40px; }
-    .obj { width: 464px;  bottom: 40px; }
+    .obj { width: 464px;  bottom: 22px; }
   }
 }
 
