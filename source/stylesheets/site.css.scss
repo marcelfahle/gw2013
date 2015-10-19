@@ -1376,6 +1376,57 @@ header {
   cursor: pointer;
 }
 
+.project-inflight {
+  z-index: 1000;
+  .content {
+    h1 {
+      color: #e20074;
+      span {
+        color: #e20074;
+      }
+    }
+    .client { color: #000; }
+    .intro, .copy { color: #000; }
+    @media all and (max-width: 969px )  {
+      // only for first
+      margin-top: 10px;
+    }
+  }
+  .obj {
+    height: auto;
+    bottom: 22px;
+    width: 623px;
+    max-width: 100%;
+    left: 50%;
+  }
+  @media all and (max-width: 969px )   {
+    height: 678px;
+    .content { margin-top: 20px; }
+    .objmobile { bottom: -360px; margin-left: -262px; }
+  }
+  @media all and (min-width: 970px) and (max-width: 1279px )  {
+    .content { margin-top: 50px;  }
+    .content .copy { width: 470px;  }
+    //.obj { width: 500px; left: 460px; }
+    .obj { width: 603px; bottom: -16px; left: 44%;  }
+  }
+  @media all and (max-width: 1439px ) and (min-width: 1280px) {
+    .content { margin-top: 123px;  }
+    //.obj { width: 560px; left: 570px; }
+    .obj { width: 674px; bottom: -20px; left: 43.5%;  }
+  }
+  @media all and (max-width: 1679px ) and (min-width: 1440px) {
+    .content { margin-top: 92px;  }
+    .obj { width: 792px; top: 96px; left: 42.4%;  }
+  }
+  @media all and (min-width: 1680px) {
+    .content { margin-top: 130px;  }
+    .obj { width: 796px; top: 136px; left: 42%;  }
+  }
+
+}
+
+
 .project-ibs {
   z-index: 1000;
   .content {
