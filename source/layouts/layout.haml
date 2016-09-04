@@ -12,12 +12,16 @@
     %meta{:content => page_description, :name => "description"}
 
     -#%meta{:content => "width=1080", :name => "viewport"}
-    %meta#viewport{:content => "width=500", :name => "viewport"}
+    %meta#viewport{:content => "width=device-width, initial-scale=1", :name => "viewport"}
     :javascript
       (function(doc) {
         var viewport = document.getElementById('viewport');
         if ( navigator.userAgent.match(/iPad/i)) {
           document.getElementById("viewport").setAttribute("content", "width=1280, maximum-scale=1.0");
+        }
+        if (window.innerWidth <= 480) {
+          console.log('small yeah', window.innerWidth);
+          document.getElementById("viewport").setAttribute("content", "width=480");
         }
       }(document));
 
