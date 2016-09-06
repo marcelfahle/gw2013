@@ -456,20 +456,20 @@ header {
   .slide-indexes {
     pointer-events: auto;
     position: absolute; 
-    width: 200px;
+    width: 230px;
     text-align: center;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -115px;
     padding: 0;
     margin-bottom: 0;
     margin-top: 33px;
     @media all and (min-width: 970px) and (max-width: 1229px )  {
       margin: 1em 0;
-      margin-left: -75px;
+      margin-left: -115px;
     }
     @media all and (min-width: 1230px) {
       margin: 1em 0;
-      margin-left: -75px;
+      margin-left: -115px;
     }
     li {
       display: inline;  
@@ -650,6 +650,28 @@ header {
     }
   }
 }
+
+
+
+
+.slide-pawlak{
+  
+  h1 { color: #000;  }
+  h1 span { color: #000;  }
+  .client { color: #e52000;  }
+  .intro { color: #000;  }
+  .copy { color: #000;  }
+  .object.show-desktop { top: 10px; right: 510px; }
+  .object.show-mobile { margin-left: -316px;  }
+  @media all and (min-width: 970px) and (max-width: 1229px )  {
+    .object.show-desktop { top: -18px; right: 790px; width: 550px; }
+  }
+  @media all and (min-width: 1230px) {
+    .object.show-desktop { top: -40px; right: 604px; }
+  }
+} 
+
+
 
 
 .slide-stollenhelden {
@@ -1767,6 +1789,67 @@ header {
   cursor: default;
   pointer-events: none;
 }
+
+
+.project-pawlak {
+  z-index: 1000;
+  .content {
+    h1 {
+      color: #000;
+      span {
+        color: #000;
+      }
+    }
+    .client { color: #e52000; }
+    .intro, .copy { color: #000; }
+    @media all and (max-width: 969px )  {
+      // only for first
+      margin-top: 10px;
+      width: 100%;
+      margin: 0 auto;
+      left: 0;
+      margin-top: 20px;
+      padding: 0;
+      margin-left: -10px;
+    }
+  }
+  .obj {
+    height: auto;
+    bottom: 22px;
+    width: 623px;
+    max-width: 100%;
+    left: 50%;
+  }
+  @media all and (max-width: 969px )   {
+    height: 762px;
+    .content { margin-top: 20px; }
+    .objmobile { bottom: -350px; margin-left: -262px; }
+  }
+  @include breakpoint(970px) {
+    .content { margin-top: 50px;  }
+    .content .copy { width: 470px;  }
+    //.obj { width: 500px; left: 460px; }
+    .obj { width: 513px; bottom: 20px; left: 50%;  }
+  }
+  @include breakpoint(1280px) {
+    .content { margin-top: 53px;  }
+    //.obj { width: 560px; left: 570px; }
+    .obj { width: 560px; bottom: 36px; left: 50%;  }
+  }
+  @include breakpoint(1440px) {
+    .content { margin-top: 92px;  }
+    .obj { width: 660px; top: 30px; left: 50%;  }
+  }
+
+}
+
+
+
+
+
+
+
+
 
 .project-stollenhelden{
   z-index: 1000;
