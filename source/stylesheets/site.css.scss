@@ -682,7 +682,7 @@ header {
   .intro { color: #000;  }
   .copy { color: #000;  }
   .object.show-desktop { top: 10px; right: 510px; }
-  .object.show-mobile { margin-left: -256px;  }
+  .object.show-mobile { margin-left: -206px; top: 0;  }
   @media all and (min-width: 970px) and (max-width: 1229px )  {
     .object.show-desktop { top: 66px; right: 760px; width: 550px; }
   }
@@ -691,6 +691,21 @@ header {
   }
 } 
 
+.slide-stollenhelden.nominee {
+  .client { color: #fff;  }
+  .intro { color: #fff;  }
+  .copy { color: #fff;  }
+  .object.show-desktop { top: 10px; right: 510px; }
+  .object.show-mobile { margin-left: -202px;  }
+  @media all and (min-width: 970px) and (max-width: 1229px )  {
+    .object.show-desktop { top: 0px; right: 760px; width: 550px; }
+  }
+  @media all and (min-width: 1230px) {
+    .object.show-desktop { top: 0px; right: 604px; }
+  }
+
+
+}
 
 
 
