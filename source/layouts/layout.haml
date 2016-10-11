@@ -16,9 +16,6 @@
     :javascript
       (function(doc) {
         var viewport = document.getElementById('viewport');
-        if ( navigator.userAgent.match(/iPad/i)) {
-          document.getElementById("viewport").setAttribute("content", "width=1280, maximum-scale=1.0");
-        }
         if (window.innerWidth <= 480) {
           console.log('small yeah', window.innerWidth);
           document.getElementById("viewport").setAttribute("content", "width=480");
@@ -32,7 +29,7 @@
     -#OR, place favicon.ico and apple-touch-icon.png in /source and deactivate :favicon_maker in config.rb
     %link{rel:"icon", href:"favicon.ico", type:"image/x-icon"}
 
-    %link{href:'http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic', rel:'stylesheet', type:'text/css'}
+    %link{href:'https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic', rel:'stylesheet', type:'text/css'}
 
     = javascript_include_tag "vendor/modernizr-2.6.1.min"
     = stylesheet_link_tag "components"
@@ -128,7 +125,7 @@
             Fax 0201 630 191 – 88
 
           %h2 FOLGE UNS
-          %a.fb{href: "http://facebook.com/gedankenwerk"}
+          %a.fb{href: "https://facebook.com/gedankenwerk"}
             %img.modernbrowser{src: "/images/Footer_Facebook.svg"}
             %img.ie8{src: "/images/Footer_Facebook.png", width: 107}
             %span >>
@@ -186,7 +183,7 @@
           -#  %a.news{href: "/news"} News
 
 
-    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"
+    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"
     :javascript
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.8.0.min.js"><\/script>')
     = javascript_include_tag "jquery.krautSlider.js"
