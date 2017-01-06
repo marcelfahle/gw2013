@@ -51,7 +51,7 @@
       -#  %a{href:"#"} Tap Here
       -#  %span> .
 
-      %nav.show-desktop
+      %nav.show-desktop2
         %ul.site-nav
           %li
             %a.index{href: "/"} HOME
@@ -61,11 +61,20 @@
             %a.services{href: "/services"} SERVICES
           %li
             %a.projects{href: "/projects"} PROJECTS
-          %li
-            %a.contact{href: "#kontakt"} CONTACT
+          -#%li
+          -#  %a.contact{href: "#kontakt"} CONTACT
+          %li.socialnav.first
+            %a{href: "https://www.facebook.com/gedankenwerk", target: "_blank"}
+              %img{src: "/images/Icon_Header_Facebook_32x32.svg", height: "32"}
+          %li.socialnav
+            %a{href: "https://www.instagram.com/gedankenwerk_com", target: "_blank"}
+              %img{src: "/images/Icon_Header_Instagram_32x32.svg", height: "32"}
+          %li.socialnav
+            %a{href: "https://www.youtube.com/channel/UCkYe1j5dm2LkG9Pdvnm4VEQ", target: "_blank"}
+              %img{src: "/images/Icon_Header_YouTube_77x32.svg", height: "32"}
           -#%li
           -#  %a.news{href: "/news"} NEWS
-      %nav.show-mobile
+      %nav.show-mobile2
         %ul.mobile-nav-trigger
           %li
             %a.index{href: "#"} MENU
@@ -78,8 +87,17 @@
             %a.services{href: "/services"} SERVICES
           %li
             %a.projects{href: "/projects"} PROJECTS
-          %li
-            %a.contact{href: "#kontakt"} CONTACT
+          -#%li
+            -#%a.contact{href: "#kontakt"} CONTACT
+          -#%li
+          -#  %a.socialnav{href: "https://www.facebook.com/gedankenwerk", target: "_blank"}
+          -#    %img{src: "/images/Icon_Header_Facebook_32x32.svg"}
+          -#%li
+          -#  %a.socialnav{href: "https://www.instagram.com/gedankenwerk", target: "_blank"}
+          -#    %img{src: "/images/Icon_Header_Instagram_32x32.svg"}
+          -#%li
+          -#  %a.socialnav{href: "https://youtube.com/gedankenwerk", target: "_blank"}
+          -#    %img{src: "/images/Icon_Header_YouTube_77x32.svg"}
 
       %h1.site-logo.modernbrowser Gedankenwerk. Agentur f&uuml;r neue Medien
       %h1.site-logo.ie8 Gedankenwerk. Agentur f&uuml;r neue Medien
@@ -126,9 +144,11 @@
 
           %h2 FOLGE UNS
           %a.fb{href: "https://facebook.com/gedankenwerk"}
-            %img.modernbrowser{src: "/images/Footer_Facebook.svg"}
-            %img.ie8{src: "/images/Footer_Facebook.png", width: 107}
-            %span >>
+            %img{src: "/images/Icon_Footer_Facebook_36x36.svg", height: 36}
+          %a.fb{href: "https://www.instagram.com/gedankenwerk_com/"}
+            %img{src: "/images/Icon_Footer_Instagram_36x36.svg", height: 36}
+          %a.fb{href: "https://www.youtube.com/channel/UCkYe1j5dm2LkG9Pdvnm4VEQ"}
+            %img{src: "/images/Icon_Footer_YouTube_86x36.svg", height: 36}
 
         .footer-locations
           -#
